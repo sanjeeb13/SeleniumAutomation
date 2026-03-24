@@ -20,14 +20,7 @@ public class LoginPage {
 	@FindBy(id="Password")
 	WebElement passwordTextbox;
 	
-	//@FindBy(xpath="//*[@id=\"main\"]/div/div/div/div[2]/div[1]/div/form/div[3]/button")
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	WebElement button = wait.until(
-    ExpectedConditions.elementToBeClickable(
-        By.xpath("//*[@id='main']/div/div/div/div[2]/div[1]/div/form/div[3]/button")
-    	)
-		)	;
-button.click();
+	@FindBy(xpath="//*[@id=\"main\"]/div/div/div/div[2]/div[1]/div/form/div[3]/button")
 	WebElement loginButton;
 	
 //	private By usernameTextBox = By.id("Email");
