@@ -20,7 +20,7 @@ public class LoginPage {
 	@FindBy(id="Password")
 	WebElement passwordTextbox;
 	
-	@FindBy(xpath="//*[@id=\"main\"]/div/div/div/div[2]/div[1]/div/form/div[3]/button")
+	@FindBy(xpath="//button[normalize-space()='Log in']")
 	WebElement loginButton;
 	
 //	private By usernameTextBox = By.id("Email");
